@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Travel Page </title>
+        <style>
+            .main,
+.cards,
+.features{
+    padding:40px;
+}
+            .navbar{
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+            }
+            .menu{
+                
+                display:flex;
+                gap:25px;
+                align-items:center;
+            }
+            .main{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                flex-direction:column;
+                background-color:green;
+            }
+            .cards{
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                background-color:yellow;
+                
+            }
+            .card{
+                border: 2px solid black;
+                border-radius:20px;
+                text-align:center;
+                background-color:lightblue;
+                padding:20px;
+            }
+            .features{
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+            }
+            .img{
+                width:100px;
+            }
+            @media(max-width:768px){
+                .navbar{
+                    flex-direction:column;
+                }
+                .menu{
+                    flex-direction:column;
+                }
+                .cards{
+                    flex-direction:column;
+                }
+                .features{
+                    flex-direction:column;
+                }
+                img{
+                    width:60px;
+                }
+                h2{
+                    font-size:20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <img src = "../Images/logo.png" alt="logo">
+            <div class="menu">
+                <p> Home </p>
+                <p> About </p>
+                <p> Contact </p>
+            </div>
+        </nav>
+        <div class = "main">
+            <h2> Welcome to my travel page </h2>
+            <p> Adventure starts here</p>
+            <button> Book now</button>
+        </div>
+       
+        <div class ="cards">
+            <div class ="card">
+                <img src = "../Images/logo.png" alt="logo">
+                <h6> Name </h6>
+                <p> Description </p>
+            </div>
+            <div class ="card">
+                <img src = "../Images/logo.png" alt="logo">
+                <h6> Name </h6>
+                <p> Description </p>
+            </div>
+            <div class ="card">
+                <img src = "../Images/logo.png" alt="logo">
+                <h6> Name </h6>
+                <p> Description </p>
+            </div>
+        </div>
+        <div class = "features">
+            <input type="checkbox"> Easy Booking
+            <input type="checkbox"> Affordable
+            <input type="checkbox"> 24/7 Support
+        </div>
+    </body>
+</html>
