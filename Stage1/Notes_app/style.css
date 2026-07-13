@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    display: flex;
+    background-color: aliceblue;
+    margin-top: 20px;
+    width:70%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+    padding-left: 10px;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+#note{
+    height: 100px;
+    font-size: 16px;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+
+#addBtn{
+    width:fit-content;
+    font-size: 16px;
+    background-color: rgb(116, 116, 197);
+    border-radius: 7px;
+    color: white;
+}
+
+
+.notesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+}
+
+
+.card{
+    width: 250px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* #navbar{
+    list-style-type: none;
+    display: flex;
+    background-color: black;
+    color:white;
+    width: 100%;
+    height: 35px;
+    justify-content: space-between;
+    font-size: 16px;
+    padding-top: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+} */
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style: none;
+    margin: 0;
+    padding: 0 35px;
+
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Notes App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <ul id="navbar">
+            <li>Magic Notes</li>
+            <li>Home</li>
+            <li><input type="text" placeholder="search" class="searchTxt" font-size: 16px;"><button id="search" style="font-size: 16px;">search</button></li>
+            
+        </ul>
+        <div class="container">
+            <h1>Welcome to Magic Notes</h1>
+            <div class="inputBox">
+                <h3> Add a Note </h3>
+                <textarea id="note" placeholder="Write your note here..."></textarea>
+                <button id = "addBtn"> Add Note </button>
+            </div>
+            <h2> Your Notes </h2>
+            <div class = "notesContainer"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
